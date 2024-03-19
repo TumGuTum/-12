@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "./reset.css";
+
+/*Шапка*/
+
+/*Анимация*/
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    width: 100%;
+}
+  
+  .black-block {
+    background-color: black;
+    height: 800px;
+    height: 100vw; /* Занимает всю высоту экрана */
+    position: relative;
+  }
+  
+  .hover-area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .digit {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    pointer-events: none;
+  }
+  
+  @keyframes fall {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100vh);
+    }
+  }
+
+
+
+/*Контент*/
+  .header{
+    padding: 31px 0 100px;
+    color: #fff;
+    height: 800px;
+    background-color: black;
+  }
+  .container{
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 32px;
+  }
+  .container--header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header a{
+    color: #fff;
+  }
+
+
+
+  /*Навигация*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list{
+    display: flex;
+    column-gap: 54px;
+    font-size: 15px;
+    font-weight: 300;
+    align-items: center;
+}
+.nav-list__link{
+    opacity: 0.7;
+}
+.nav-list__link--active{
+    opacity: 1;
+}
+.logo{
+    flex-shrink: 0;
+}
+.user{
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+.user__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.user__greeting{
+    opacity: 0.5;
+}
